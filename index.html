@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- esto es de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- con esto puedo traer los iconos de la pagina de fontawesome -->
+    <script src="https://kit.fontawesome.com/562d327e55.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+
+    
+    <!-- header o encabezado -->
+    <!-- div con atributo que es class -->
+    <div class="home-wrapper">
+        <header>
+            <div class="container">
+                   <!-- logo -->
+                   <a href="#"><img src="images/logo.jpg" alt=""></a>
+                   <!-- menu -->
+                   <!--nav es como un contenedor para agregar enlaces, (anclages, internos), se usa tambien para poder editar -->
+
+                   <nav>
+                        <!-- asi hago los botones y las cosas clikeables -->
+                        <!-- # es un index.html resumido -->
+                        <a href="#"class="btn btn-warning">Inicio</a>
+                        <a href="#novedades">novedades</a>
+                        <a href="#categoria">categoria</a>
+                        <a href="#contacto">contacto</a>
+                        <!-- siguen programas-enlaces externos donde mis usuarios tienen perfiles ahi -->
+                        <!-- el target ="_blank" es para abrir el link en otra pestaña -->
+                        
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com"target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://wa.me/3023542902?text=Atenci%C3%B3n%20al%20cliente!!"target="_blank"><i class="fa-brands fa-whatsapp fa-spin" style="color: #25511f;"></i></a>
+                   </nav>
+            </div>
+
+        </header>
+        <!-- seccion promocional -->
+        <section class="container" id="promocion">
+            <h1>promocion por el dia del padre</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, blanditiis sequi vel sed voluptas aut dignissimos aspernatur reprehenderit exercitationem eveniet eius delectus magni quis perferendis et. Dolorem dolore fuga dignissimos?</p>
+            <a href="https://wa.me/3023542902?text=Atenci%C3%B3n%20al%20cliente!!"target="_blank" class="btn btn-warning">comprar</a>
+        </section>
+
+
+
+
+
+    </div>
+
+    <!-- novedades -->
+    <section class="container" id="novedades">
+        <h2>Novedades</h2>
+        <div class="box">
+            <!-- aqui va a ir la imagen de la novedad -->
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHgATwMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAEBQAGAQIDB//EADgQAAIBAwMBBgQEBAYDAAAAAAECAwAEEQUSITEGEyJBUWEUMoGRFSNx0VJiocEHJELh8PEmM7H/xAAaAQEAAwEBAQAAAAAAAAAAAAAEAQMFAgAG/8QAIhEAAgMAAgMAAgMAAAAAAAAAAAECAxEEMRIhQRMkBSNR/9oADAMBAAIRAxEAPwDybusemf4TwawyquQwYU4mtwDNyNifxDINCrANpcZXdwpXoc+xrQlx8CQ5ifYubbnisoATg5X3zRVzYSxscIvHXbVl/wAPuz8N7fvf6nt+DtWA2HpJJwQD7DqfpVEq5R7Q2hq+SUPZNG/w91vUdJOoIbeJWGYYZnKvIPXpgfU1W9SsrnTrp7W9g+HuE+aOXgj9/wBa9ynvN8n+Ssp7mVsEu83dqMenQn+opL2ltoO0FoLPVbYW9yoJt5u8DGM/r1I9RVfs1HwZNZHs8Y7vJwXjH1NdooUB5O/2HSus1m1pctDMgEiMVYc8EVykZc/sKjcAfjzsy2RJmNQCPSt41d/mkVc+prtZRxvGTIVC7uScUzWO3gBwBt4ya7S0dxuC7V5biM/h7dyHhvC3ejlXGR9T5UNeC42bJVHl4lzii7KYtuVznAHJPWt3wZAc4+vtWhqbxGAuH+quR5a/foF71e4Kq752j5h96fR64LCwtdKsVj+N2l5ZZhlYM+Lp5tjHr5UnliPBUDPlS/s6rtrccEnMk++I7z/qZSM/ciquTqSRx/H3urylDsuOjnTpLpL/AFa4uNQuWR17qTcuw4ODjjoQOOh3e1EXMGp6DZNLq9rfSQMu9JpSjKw65jYNkEA5ww8vKg9P0+C01Jba2iX4qVhue4c7EwCTuODycEVYe03aFb3sLFaO0ffxxzKyRuGATY4HPmOU59fcUBNmpVybq5eSl7POtaljub5riF+8jlAYMPPjH9qW/Dyt8sbn3xW+myOInUf6Wz9/+qMUuyqzD1PQCrPHVoxON78n60ECzQKAyEITyD50Wk93KSUUgHHOzJoO58NvGOh5PWjLMflJ6keRrlb0X0OXn4Rk0gK3vTExJCsCMEGmFvOJGUhFA9qTSyNI4ZgvAxgCmtg+ShKr4fLHWmUvZHzF1s4U+C6HEaBlFI9bU2upRTRHa5UMCPUHrVnsoJLogRRDJ9BgD60k7cW3wl1aRltzGM5x0znypfKj/TplcKf7Hj/ujO+7U2HaGXT/AMZh+BaNx8Td2agStyMsOD5D70n7RataPc3Vtokty2myMNrXGDI4Hmxx6+X6UhHStGrIaN+Lwa6Hy0u44GBRbSoJfzVQp0JOc4+lY7HW9veag9rdM6pKnhdCoKt5fMcEdad632L1a0Uy2yLeQ4zmEguB7r+2aTCcfxqIyFdkF+WK1MqlzIJJsIo2LnAHpXaKZVjUHb0HU0M8DqzCRWUg4IPBFbQG1j/98UpHqrGqXF6c1cjZ7pxCHirX2VsrebdLd/Knypn5v1pPolg2ozpbxsiu+cFzxwM/2ou2M0OpQWMZj+JmIUJux3eTgB/Q+fsKXS4VtSkYfJjO6LhAu5v4oY9qyBUHQKKr/a3T47yG3u3kkWOK1luZQMZwsixgL7ksvWpp6d+lxI7rBHZbjcLMWDKwYJjgdcnpW2qXFwtkJraa0eKztWS5R9zLKsr52YxyemBnPhJ4xSOVcrKsiA4PFdN/lISaXodrqsdpPDNNHE80lvMjMpZHERkUhsAFSAQcgYxXLTtAhms7We9naLvbxoZDEyShUEe/cAD19s00srHVrXWYLKyWzMtv3sgtY3bG5kwSd2CzFWwOfb9QdGN+8MVtarahEvJCqy7gRJ3JBz7bQfrWU1i1m8pLcRLPTn0prhrhtzxyQ91JGcxTRuHIdTjkeH/6DyKuNj2gZURViBIHpVIs49Wb/wAdjdJ4kxdRoGBx+Xv8J6+IMPD5sR50xtbhILBJrm4ihjmBWB3JO7HBOADwD5/tUxa6Z9H/ABfKrjW4W9E7cahDqRhnSNEuUyJHXq4PQH1xiqlk56nP600v7O4LWrGWFku5nhiKsSMowUnp0yRg+lL7q3e1up7aXaZIZGjfaeMqcHB/UVG6ZHNnCy5zgsTGnZrVF0vVre8kEhWElvy8bs7SBjP61JdUsjcTXyWjRX8sDo8aojQd43DOoPQFS2VwRk8cdE6sVPBqRqMnJ6VLflgJLx1ljk7QJdXV9cSJP3t7ZJE6YGwTh42Zxzwp7snpnLV1ur+zu9GjtITOhQF3G1cSTkY3E7vlA4HHTPrSCLliq8Z4wKOtrPw7i+DSKoyawNdKKesaavq8F3fXVyGuissDxojKo7slFA5B55XNYg7RoZLW6v7aT4uOVnnnixm4/LZFYg4G/wAQyfPGeucrUhVZm3zKoYEdOM4P/PrXK/SOB9qSd4ozhj5+9RKpYTC57gVJ2ga3dLu1h26gqQJ38sSHvBGd25hzhiwj+iDnJNaatqek6kkcIgu7WO3kk+HKKrnunYuUYFhyGZsEHoeRSZ1LEkn61psyfmFGcRakOU1tYLTS7e0N1GlncSSSDI8as6sBweuBigNSuEu9Su7qMMEnneVQ45AZicH70K3ArIzgYzXksJk9MVgNtNZ60w0zRp9UDG3kgQiaKD81iMvJu2DgfymvHJraOhwxJFOdMvlhuoXlVnRSDtA6igLbQb17iygSaFJ7wK0SMWHhbOGzjGOMcZweKJtrC8ijhkmnt4WlTvIw5YErzgnAwM4plU2vgK+tP6NvxCEQyRyzXEpJUqzJ0wSfWukep2guJLhDLtLyuAyY+Yrx1/lNSKC8aJrSSSMXKqHFvnyA3+nXHOKxPpmoOEUXEJRnj8Oehdcqen8IH2pL2SBLIfSs3KIZJWQFUySAQMgZ86BlQAeBias9zo12ZLhDLAkkIYyKxOQAQD0HqaT3ekXiWZu8xtD3pi3K3njP2PP2NFtra+DqLU/ooY881uBx/vRWo6XNp9w0E7RmVDh1XOVPHqOevBFDbSPMUXGuxmp9GtH2epNa6dd2kasGuJIn71ZNpXYHGMY5zvPmOlL6zUElg0ztCbBLFEtpJYrW4FwEknyN20hgvh8IYnJHPQVltZhngto7uzZ5LeIQq6Tbd6D5Qw2nOM4yCOPvSQEheBUUE465q2MmuimcFLstH4/32ofF/Dbbsx7WcS8E7du7bjrj3xnmuv46Fn3JAdyxLEmZchSECbsY9B/Wkek6dfand/DabbtPPsZ9ikDCjqSTgAVLiG40+7ltbuJormJsOjY8PGfL2IpMLc9BJ0J+x1e9oSZJXa0y89t3Lnvep48WMfy9KDOv/wCVe0NqDA0QQJ3nysDu35x1zu49GIpa86svTmhCcnniubLH8Z1VSs9oZ6rqovbe3iELqluGVC8m9tpOducDgeX1pO0mT0/rUdzkiudGlNsXCCSJUqVK4LDor+VbiQVKlSmyHFDTs52iu+zmp/iFgsTSmJoisoJBVsZ6EEHgcg0NrGrT6xqlxqN0I1muGDOIwQowAPMk9B1JyTk1Kle33p7PWAJck1qWJqVKjT2GKxUqV4k//9k=" alt="">
+            <!-- titulo de la novedad -->
+            <h3>El club de los psicopatas</h3>
+            <!-- descripcion de la novedad -->
+            <p>Es un libro de acción trepidante, con una narrativa increíble, envuelve la acción, la desesperación, la energía y la tensión que Katzenbach sabe desarrollar tan bien, sin embargo, hay un riesgo que Jhon asume en esta novela, que aunque se agradece, no termina por convencer:
+                La historia propone una conversión, no hay un detective heroico ni un némesis que le complicará la vida, esto ya no es nuevo, las historias van mutando para ofrecer alternativas, pero eso las hace inverosímiles para quienes queremos leer enigmas, pistas y resoluciones, en este punto, quizá estamos atascados en estas historias que no le damos una oportunidad a la inteligencia de un ser común y corriente.</p>
+            <a href="https://wa.me/3023542902?text=Atenci%C3%B3n%20al%20cliente!!"target="_blank" class="btn btn-warning">comprar</a>
+        </div>
+
+        <div class="box">
+            <!-- aqui va a ir la imagen de la novedad -->
+            <img src="images/libro 1.webp" alt="">
+            <!-- titulo de la novedad -->
+            <h3>La historia del loco</h3>
+            <!-- descripcion de la novedad -->
+            <p>La Historia del Loco es una de las novelas más destacadas del escritor estadounidense John Katzenbach, publicada en 2004. La obra podría ser considerada una novela negra o policíaca por su argumento y su desarrollo, pero con la particularidad de su ambientación en un psiquiátrico.</p>
+            <a href="https://wa.me/3023542902?text=Atenci%C3%B3n%20al%20cliente!!"target="_blank" class="btn btn-warning">comprar</a>
+        </div>
+
+
+        <div class="box">
+            <!-- aqui va a ir la imagen de la novedad -->
+            <img src="images/libro 3.jpeg" alt="">
+            <!-- titulo de la novedad -->
+            <h3>Un final perfecto</h3>
+            <!-- descripcion de la novedad -->
+            <p>Un final perfecto (Red 1-2-3) es una novela escrita por John Katzenbach y publicada en el 2012. El libro narra la historia de tres mujeres pelirrojas que son el objetivo de un asesino que busca ser famoso.“Un thriller sobre la lucha a muerte entre un refinado psicópata y sus tres víctimas”.​</p>
+            <a href="https://wa.me/3023542902?text=Atenci%C3%B3n%20al%20cliente!!"target="_blank" class="btn btn-warning">comprar</a>
+        </div>
+    </section>
+
+    <!-- categoria -->
+    <section class="container" id="categoria">
+        <h2>Libros cientificos</h2>
+        <div class="box">
+            <!-- aqui va a ir la imagen de la novedad -->
+            <img src="data:image/jpeg;base64,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" alt="">
+            <!-- titulo de la novedad -->
+            <h3>EL FUTURO DE NUESTRA MENTE</h3>
+            <!-- descripcion de la novedad -->
+            <p>En El futuro de nuestra mente, uno de los divulgadores científicos más conocidos del mundo, el físico teórico estadounidense Michio Kaku, se sitúa en la frontera entre los últimos avances de la neurociencia y la ciencia ficción. Casi de la mano por los laboratorios de todo el mundo, Kaku lleva al lector hacia un futuro en el que se podrán grabar los recuerdos, practicar la telepatía, grabar vídeos de nuestros sueños y controlar la mente de otras personas. Kaku, profesor de la Universidad de Nueva York y experto en teoría de cuerdas, cree incluso que en un futuro no tan lejano podríamos trasladar todo el conocimiento de nuestro cerebro a un ordenador.</p>
+            <a href="https://wa.me/3023542902?text=Atenci%C3%B3n%20al%20cliente!!"target="_blank" class="btn btn-warning">comprar</a>
+        </div>
+
+        <div class="box">
+            <!-- aqui va a ir la imagen de la novedad -->
+            <img src="data:image/jpeg;base64,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" alt="">
+            <!-- titulo de la novedad -->
+            <h3>BREVE HISTORIA DE MI VIDA</h3>
+            <!-- descripcion de la novedad -->
+            <p>“Deja la cerveza”, le dijo el médico al físico Stephen Hawking después de que se cayera por las escaleras en su último año como estudiante en la Universidad de Oxford. Pero lo que hacía tambalearse a Hawking no era una borrachera, sino los inicios de la esclerosis lateral amiotrófica que le ha dejado pegado a una silla de ruedas las últimas décadas. Con su característico humor negro, el científico vivo más conocido del mundo repasa su vida en este libro, desde sus dramas sentimentales, con dos divorcios, hasta las anécdotas surgidas alrededor de su investigación en la silla de la prestigiosa Cátedra Lucasiana de la Universidad de Cambridge, la misma que ocupó Isaac Newton. “Aunque en su caso la silla no era eléctrica”, bromea Hawking en su biografía.</p>
+            <a href="https://wa.me/3023542902?text=Atenci%C3%B3n%20al%20cliente!!"target="_blank" class="btn btn-warning">comprar</a>
+        </div>
+
+
+        <div class="box">
+            <!-- aqui va a ir la imagen de la novedad -->
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADgAJQMBIgACEQEDEQH/xAAaAAADAAMBAAAAAAAAAAAAAAAABQYDBAcB/8QAMRAAAgEDAgMGBQMFAAAAAAAAAQIDAAQRBRIGITETFEFRYZEiMlKhsSOB0QdCgqLB/8QAGgEAAgMBAQAAAAAAAAAAAAAABAUCAwYBAP/EACMRAAICAQIGAwAAAAAAAAAAAAABAgMRMUEFEhMhUtEEIiP/2gAMAwEAAhEDEQA/AOY28jBlZDhl8a6Xw1L3jSI3GfmPKozRbKS40ItFoUk7vuVb1JBhTnOCufQgefQZNWnDWj6nY6aY7izlRllYFTjINDzjnQZu38HFvdDPYAuc5J6Cmlhw/PdwPPKyxxLywXAP/ce2fSpzWdRTRoyt5+jMRkbjziX6zjJ9AAOtKbjjbTltreDTo9SuhGpVN0ggRm+ogbiferKvjrWQssvw8RLaVLcFUga3kCqAT2jD8iiuPajqfEfeWzJPCfoSTIFFEclXiUuVvkOuC7viC14c7a1l00afCzydnNkzMcnovPoRkftnNV+u8Saxp9wsbmzmab5TES3MADn08+nvSXhh+H49Oto7qJTco43BkYgIXXPMcshVY/5ePhVx2HDjTJc93i3SjmzByc/FzP8Ar7eFCRnmWRjfX04qJzzim5k1LXrddSeMPIo3bFyoI+LpnnnH3rTbSp7izi1K5CRxvMFjz8JmboMDmR7+uaZcfWkD6gZtPTZsCkbAQFIA5+9a+pPZtHZXfZvK8CKe1L4Rm2qSRRsVgVzeciDUDdRSiOKVQi5wv0+f3orHeS9tIZMjLEk5FFQbRYoSKY27paZtQhJBBBiJyM+YNVWmM0+mRZcFlGOSkfmpqwlYW6kK7qMksrnb9qc2GoJCsolgcYDSFsk9ASfxSxZ09Gt+bw6Ni68NtV6J3j69eKNIYiQGJDkHr6YqM764tEhB2lScMAM48s0x164ubi5EjRM65DA7Cw+LoD55peZgIQDYYfn8RQbTjry2+Q86ZP6pJIyi7tswtMXAw2Mdc+NFYWBBwRggnIxjBryuHcFnwtxbLp+nLp6W4kjEE0R/V2se0YEt8p5jGB161b3fF0l9ayxvYLGsyMGCTkfMCDn4c4yc45dOtFFDWtpmm4NTXdW+dZwRer8ayPFZWPcHRtNltyrd4BDmHzGzIB8geXrWxc/1LN0rrNocDB9wx3g4AeMRyADb/cM/uT16UUUSu6M5auWcorZkdrF2moapd3sULQrcytL2bSbypY5PPAzzJ8P5r2iivYIn/9k=" alt="">
+            <!-- titulo de la novedad -->
+            <h3>EL BONOBO Y LOS DIEZ MANDAMIENTOS</h3>
+            <!-- descripcion de la novedad -->
+            <p>Después de leer al biólogo holandés Frans de Waal es imposible volver a ver a un primate no humano con los mismos ojos. De Waal ha pasado décadas estudiando el comportamiento de poblaciones de bonobos y chimpancés y ha observado actitudes de cooperación, empatía e incluso duelo tras la muerte de otro individuo. El biólogo, uno de los primatólogos más célebres del mundo tras la publicación de libros como El mono que llevamos dentro y Primates y filósofos, vuelve a mostrar en El bonobo y los diez mandamientos que la emoción y los sentimientos no son una exclusiva del ser humano.</p>
+            <a href="https://wa.me/3023542902?text=Atenci%C3%B3n%20al%20cliente!!"target="_blank" class="btn btn-warning">comprar</a>
+        </div>
+
+        <h2>libros de aventura</h2>
+        <div class="box">
+            <!-- aqui va a ir la imagen de la novedad -->
+            <img src="https://mislibrospreferidos.com/covers/f/11/esperando-al-diluvio.jpg" alt="">
+            <!-- titulo de la novedad -->
+            <h3>Esperando al diluvio</h3>
+            <!-- descripcion de la novedad -->
+            <p>Entre los años 1968 y 1969, el asesino al que la prensa bautizaría como John Biblia mató a tres mujeres en Glasgow. Nunca fue identificado y el caso todavía sigue abierto hoy en día. En esta novela, a principios de los años ochenta, el investigador de policía escocés Noah Scott Sherrington logra llegar hasta John Biblia, pero un fallo en su corazón en el último momento le impide arrestarlo. A pesar de su frágil estado de salud, y contra los consejos médicos y la negativa de sus superiores para que continúe con la persecución del asesino en serie, Noah sigue una corazonada que lo llevará hasta el Bilbao de 1983. Justo unos días antes de que un verdadero diluvio arrase la ciudad.</p>
+            <a href="https://wa.me/3023542902?text=Atenci%C3%B3n%20al%20cliente!!"target="_blank" class="btn btn-warning">comprar</a>
+        </div>
+
+        <div class="box">
+            <!-- aqui va a ir la imagen de la novedad -->
+            <img src="https://mislibrospreferidos.com/covers/0/3b/revolucion.jpg" alt="">
+            <!-- titulo de la novedad -->
+            <h3>revolucion</h3>
+            <!-- descripcion de la novedad -->
+            <p>Ésta es la historia de un hombre, tres mujeres, una revolución y un tesoro. La revolución fue la de México en tiempos de Emiliano Zapata y Francisco Villa. El tesoro fueron quince mil monedas de oro de a veinte pesos de las denominadas maximilianos, robadas en un banco de Ciudad Juárez el 8 de mayo de 1911. El hombre se llamaba Martín Garret Ortiz y era un joven ingeniero de minas español. Todo empezó para él ese mismo día, cuando desde su hotel oyó un primer disparo lejano. Salió a la calle para ver qué ocurría y a partir de ese momento su vida cambió para siempre...</p>
+            <a href="https://wa.me/3023542902?text=Atenci%C3%B3n%20al%20cliente!!"target="_blank" class="btn btn-warning">comprar</a>
+        </div>
+
+
+        <div class="box">
+            <!-- aqui va a ir la imagen de la novedad -->
+            <img src="https://mislibrospreferidos.com/covers/e/09/un-mar-de-historias-para-olvidar-el-temporal.jpg" alt="">
+            <!-- titulo de la novedad -->
+            <h3>UN MAR DE HISTORIAS PARA OLVIDAR EL TEMPORAL</h3>
+            <!-- descripcion de la novedad -->
+            <p>La sal de la vida a veces tiene un sabor
+                amargo que nos recuerda esa última
+                tormenta que se convirtió en galerna. Y
+                por eso necesitamos historias, historias
+                para comprender y aliviar ese último
+                temporal…</p>
+            <a href="https://wa.me/3023542902?text=Atenci%C3%B3n%20al%20cliente!!"target="_blank" class="btn btn-warning">comprar</a>
+        </div>
+
+        <h2>libros de accion</h2>
+        <div class="box">
+            <!-- aqui va a ir la imagen de la novedad -->
+            <img src="https://mislibrospreferidos.com/covers/d/c2/odisea.jpg" alt="">
+            <!-- titulo de la novedad -->
+            <h3>Odisea</h3>
+            <!-- descripcion de la novedad -->
+            <p>Cuando sus dedos empuñaron el arco, Odiseo cerró los ojos un instante y respiró hondo. Tal vez, si él y sus compañeros triunfaban, futuros poetas cantarían una canción sobre los héroes que se enfrentaron a los dioses. Probablemente esos versos mezclarían mentiras y verdades, como las mezclaban los relatos que él mismo les había contado a la bella Nausícaa y a su padre sobre la cueva del cíclope, la isla de la maga Circe o el descenso a los infiernos.
+                Pues el combate que los siete estaban a punto de librar no era solo cuestión de venganza, sino, por encima de todo, de supervivencia.
+                Y no únicamente la suya, sino la de toda la raza humana.
+                El único consuelo era que, si fallaba, no quedaría nadie sobre la faz de la ancha Gea para cantar el fracaso de Odiseo.</p>
+            <a href="https://wa.me/3023542902?text=Atenci%C3%B3n%20al%20cliente!!"target="_blank" class="btn btn-warning">comprar</a>
+        </div>
+
+        <div class="box">
+            <!-- aqui va a ir la imagen de la novedad -->
+            <img src="https://mislibrospreferidos.com/covers/c/6b/la-torre-tesla.jpg" alt="">
+            <!-- titulo de la novedad -->
+            <h3>la torre tesla</h3>
+            <!-- descripcion de la novedad -->
+            <p>¿Cómo encajan unos poemas serbios con la supuesta construcción de un arma eléctrica clandestina? Algo se me escapa. Leo y releo el poema entre pequeños sorbos del whisky escocés, intentando darle sentido.
+
+                Solo se me ocurre una idea. Envío un e-mail a la dirección del contacto de Kiryl diciendo que mañana estaré en Belgrado. Adjunto el poema, una foto de la gran antena y firmo como K.
+                
+                
+                Es un intento desesperado, lo sé, pero tampoco me quedan muchas alternativas.</p>
+            <a href="https://wa.me/3023542902?text=Atenci%C3%B3n%20al%20cliente!!"target="_blank" class="btn btn-warning">comprar</a>
+        </div>
+
+
+        <div class="box">
+            <!-- aqui va a ir la imagen de la novedad -->
+            <img src="https://mislibrospreferidos.com/covers/b/1d/la-disputa-de-los-caidos.jpg" alt="">
+            <!-- titulo de la novedad -->
+            <h3>La disputa de los caídos</h3>
+            <!-- descripcion de la novedad -->
+            <p>El agente Bruce Bravo es trasladado del Centro Nacional de Inteligencia Español, al INIRIS, un departamento secreto dependiente del Ministerio de Defensa y de la Secretaría del Estado, cuyo cometido es el de resolver delitos perpetrados por sujetos de una naturaleza anómala. En la sección Sigma del INIRIS, Bruce –un muchacho estirado y un poco fanfarrón–, entrará a formar parte del equipo Tres, dirigido por Elora Montocuentiro, una mujer neurótica e irascible –aunque de fuertes principios morales–, que oculta algunos secretos y, que de manera casual, terminará poniendo en peligro a las personas que la rodean.</p>
+            <a href="https://wa.me/3023542902?text=Atenci%C3%B3n%20al%20cliente!!"target="_blank" class="btn btn-warning">comprar</a>
+        </div>
+    </section>
+    <section class="container" id="contacto">
+        <h2>contacto</h2>
+        <!-- para crear un formulario se usa la etiqueta form -->
+        <!-- action es en donde se va a almacenar, ya sea una base de datos etc, podria hacerse mandar a un correo electronico -->
+        <!-- post es para que no se vea el link -->
+        <form action="mailto:daniel20011123@gmail.com" method="post">
+            <!-- la etiqueta dic es como para maquetar de una manera mas ordenada, es una seccion dentro de la seccion -->
+            <div>
+                <!-- input donde escribimos en una sola linea algo -->
+                <!-- input para digitar el nombre -->
+                <!-- placeholder es para decirle a la persona que tiene que escribir ahi -->
+                <!-- required es para que no deje pasar si escribir lo que hay ahi, para que no lo olvide -->
+
+                <input type="text" name="nombre" id="nombre" placeholder="escribe tu nombre" required>
+            </div>
+            <div>
+                
+                <input type="text" name="apellido" id="apellido" placeholder="escribe tu apellido" required>
+            </div>
+            <div>
+              
+                <input type="text" name="asunto" id="asunto" placeholder="escribe tu asunto" required>
+            </div>
+            <div>
+                
+                <input type="email" name="email" id="email" placeholder="escribe tu email" required>
+            </div>
+            <div>
+                
+                <input type="number" name="numero" id="numero" placeholder="escribe tu numero" required>
+            </div>
+            <div>
+                <label for="fecha">fecha de nacimiento</label>
+                <input type="date" name="fecha" id="fecha" placeholder="escribe tu fecha de nacimiento" required>
+               
+            </div>
+            <div>
+                
+                <input type="password" name="contraseña" id="contraseña" placeholder="escribe tu contraseña" required min="8" max="12">
+
+            </div>
+            <!-- textarea son para parrafos -->
+            <textarea name="sugerencias" id="sugerencias" cols="30" rows="10" placeholder="sugerencias"></textarea>
+            <div>
+                <!-- botones de enviar y cancelar -->
+               
+                <button type="submit"  class="btn btn-primary">Enviar</button>
+                <button type="reset"  class="btn btn-warning">Cancelar</button>
+
+            </div>
+        </form>
+    </section>
+      <!-- seccion cotizacion -->
+     <section id="cotizacion">
+        <h2>cotizacion</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfh-8CVFoxrakMCwNN9GyRigdAftzr-mfjb4rAL6ZMJ85eV5g/viewform?embedded=true" width="640" height="2196" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+     </section>
+      <!-- seccion de videos -->
+      <section class="container" id="video">
+        <h2>videos</h2>
+        <iframe width="1095" height="546" src="https://www.youtube.com/embed/gdMkRMga7yk" title="Lello, una de las librerías más bellas del mundo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      </section>
+      <!-- footer/pie de pagina -->
+      <footer class="cover">
+            &copy;2023,librery todos los derechos reservados - diseñado por: <a href="https//">daniel sanchez</a>
+
+      </footer>
+
+           <!-- esto es de bootstrap para poder traer las cosas -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

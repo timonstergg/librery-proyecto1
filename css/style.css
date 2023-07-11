@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;700;900&display=swap');
+/*configuracion de constantes*/
+:root {
+    /*colores*/
+    --colorEncabezado:#eee9e9;
+    --colorPie:#3b2929;
+    --colorEnlace:#e9a30d;
+    --colorEnlaceSobre:#0d0d0c;
+    /*fuente*/
+    --textos:'Roboto', sans-serif;
+    --titulos:'Lato', sans-serif;
+    }
+
+    /*utilizar el selector universal con (*)*/
+    *{
+        box-sizing: border-box ;
+    }
+    /*aplicar estilos a la clase .home-wrapper, no se puede escribir la palabra class, el punto es lo que reemplaza el class*/
+    .home-wrapper{
+        /*imagen de fondo*/
+        background-image: url('../images/fondo.jpg');
+        /*tamaño de la imagen de fondo */
+        /*el cover es para que se acomode bien a lo ancho de la pantalla o del tamaño de su contenedor*/
+        background-size: cover;
+    }
+
+    /*aplicar estilos al encabezado o header que es selector de etiqueta en css*/
+    header{
+        /*ancho asi va a ir ancho en su 100 porciento vease desde donde se vea*/
+        width: 100%;
+        /*color de fondo, var es para invocar esas constantes que arriba ya habia creado*/
+        background-color: var(--colorEncabezado);
+        /*posicion del encabezado fijo*/
+        position: fixed;
+        /*espaciados, ese padding es un espaciado superior para que no me quede tan pegado a la parte del navegador*/
+        padding: 10px 0;
+
+    }
+
+    /*dimensionar el tamaño del logo, combinar selectores de etiquetas en css*/
+    header img{
+        width: 150px;
+    }
+   /*posicionar el menu de navegacion a la derecha*/
+   header nav{
+        float: right;
+        /*margen arriba*/
+        margin-top: 45px;
+   }
+
+   /*aplicar estilos a los enlaces*/
+   header nav a{
+    color: var(--colorEnlace);
+
+    /*quitar el subrayado*/
+    text-decoration: none;
+    margin-left: 6px;
+    font-family: var(--textos);
+    font-size: 1.2rem;
+    background-color: none;
+
+   }
+   /*estilos a los enlaces en el estado sobre (hover)*/
+   header nav a:hover{
+    color: var(--colorEnlaceSobre);
+    font-weight: bold;
+   }
+   /*estilos para la seccion promocion*/
+   #promocion{
+    text-align: center;
+    padding: 250px 0 250px 0;
+   }
+/*estilos al h1 en la seccion promocion*/   
+#promocion h1{
+    font-size: 2.5rem;
+    color: var(--colorEncabezado);
+    font-weight: bold;
+}
+/*estilos a la p de la seccion promocion*/
+#promocion p{
+    font-size: 1.2rem;
+    color: var(--colorEncabezado);
+    margin-top: 50px;
+    font-weight: 700;
+}
+/*estilos a la clase container*/
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#novedades .box{
+    width: 33%;
+    padding: 8px;
+    display: inline-block;
+}
+#novedades .box img{
+    width: 100%;
+    height: 400px;
+}
+#novedades .box h3{
+    text-align: center;
+}
+/*seccion categoria*/
+
+#categoria .box{
+    display: inline-block;
+    width: 33%;
+    padding: 8px;
+}
+#categoria .box img{
+
+    width: 100%;
+    height: 500px;
+}
+#categoria .box h3{
+    text-align: center;
+}
+/*estilos a las secciones*/
+
+section{
+    padding: 140px 0;
+}
+section h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 30px;
+}
+
+/*seccion de contacto*/
+
+#contacto{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url('../images/fondo.jpg');
+}
+#contacto h2,label{
+    color: aliceblue;
+    width: 100%;
+}
+#contacto input,textarea{
+    width: 600px;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+/* footer */
+footer{
+    width: 100%;
+    padding: 20px 0;
+    color: aliceblue;
+    background-color: var(--colorPie);
+    text-align: center;
+}
+iframe{
+    width: 100%;
+    margin: 0 auto;
+    
+}
